@@ -1,0 +1,25 @@
+{
+  "definitions": {
+    "link": {
+      "type": "object",
+      "properties": {
+        "key": { "type": { "enum": ["customer", "cashflow", "lease"]}},
+        "val": { "type": "string"}
+      },
+      "required": ["key", "val"]
+    },
+    "leaseType": {
+      "type": "object",
+      "properties": {
+        "kind": { "type": { "enum": ["ship", "truck"]}},
+        "amount": {"type": "number"},
+        "size": { "type": { "enum": ["little", "medium", "large"]}}
+      },
+      "required": ["kind", "amount", "size"]
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

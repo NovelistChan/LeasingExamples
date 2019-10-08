@@ -1,0 +1,14 @@
+{
+  "title": "Contract_Schema_1",
+  "description": "A Sample of Contract Schema",
+  "type": "object",
+  
+  "properties": {
+    "leases": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/leaseType"}
+    },
+    "startDate": {"$ref": "#/definitions/date"},
+    "endDate": {"$ref": "#/definitions/date"}
+  }
+}
