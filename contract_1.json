@@ -4,11 +4,15 @@
   "type": "object",
   
   "properties": {
+    "linkList": {
+      "type": "array",
+      "items": {"$ref": "definitions.json#/definitions/link"}
+    },
     "leases": {
       "type": "array",
-      "items": {"$ref": "#/definitions/leaseType"}
+      "items": {"$ref": "definitions.json#/definitions/leaseType"}
     },
-    "startDate": {"$ref": "#/definitions/date"},
-    "endDate": {"$ref": "#/definitions/date"}
+    "startDate": {"$ref": "definitions.json#/definitions/date"},
+    "endDate": {"$ref": "definitions.json#/definitions/date"}
   }
 }
