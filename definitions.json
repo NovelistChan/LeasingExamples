@@ -2,6 +2,7 @@
   "definitions": {
     "link": {
       "type": "object",
+      "customized": "link",
       "properties": {
         "key": { "type": { "enum": ["customer", "cashflow", "lease"]}},
         "val": { "type": "string"}
@@ -10,6 +11,7 @@
     },
     "leaseType": {
       "type": "object",
+      "customized": "leaseType",
       "properties": {
         "kind": { "type": { "enum": ["ship", "truck"]}},
         "amount": {"type": "number"},
