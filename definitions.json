@@ -1,13 +1,8 @@
 {
   "definitions": {
     "link": {
-      "type": "object",
-      "customized": "link",
-      "properties": {
-        "key": { "type": { "enum": ["customer", "cashflow", "lease"]}},
-        "val": { "type": "string"}
-      },
-      "required": ["key", "val"]
+      "type": "link",
+      "enum": ["customer", "cashflow", "lease"]
     },
     "leaseType": {
       "type": "object",
