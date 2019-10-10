@@ -1,8 +1,7 @@
 {
   "definitions": {
     "link": {
-      "type": "link",
-      "enum": ["customer", "cashflow", "lease"]
+      "type": "link"
     },
     "leaseType": {
       "type": "object",
