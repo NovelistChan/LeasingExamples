@@ -15,6 +15,7 @@
     },
     "date": {
       "type": "string",
+      "customized": "date",
       "format": "date"
     }
   }
